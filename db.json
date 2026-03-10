@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Primeiro Post",
+      "author": "Pedro",
+      "description": "Esse é o primeiro post"
+    },
+    {
+      "id": 2,
+      "title": "Segundo Post",
+      "author": "Gustavo",
+      "description": "Esse é o segundo post"
+    }
+  ]
+}
