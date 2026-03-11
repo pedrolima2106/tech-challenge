@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function PostCard({ post }) {
   return (
     <div style={{
@@ -13,6 +15,11 @@ function PostCard({ post }) {
       </p>
 
       <p>{post.description}</p>
+
+      <Link to={`/post/${post.id}`}>
+        Ler mais
+      </Link>
+
     </div>
   );
 }

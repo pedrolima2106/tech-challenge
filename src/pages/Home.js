@@ -4,6 +4,7 @@ import PostCard from "../components/PostCard";
 
 function Home() {
   const [posts, setPosts] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     api.get("/posts")
@@ -11,15 +12,27 @@ function Home() {
         setPosts(response.data);
       })
       .catch((error) => {
-        console.log("Erro ao buscar posts:", error);
+        console.log(error);
       });
   }, []);
 
+  const filteredPosts = posts.filter((post) =>
+    post.title.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div>
+
       <h1>Lista de Posts</h1>
 
-      {posts.map((post) => (
+      <input
+        type="text"
+        placeholder="Buscar posts..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
+      {filteredPosts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
 
