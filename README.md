@@ -28,6 +28,7 @@ CSS
 ✔ Painel administrativo
 ✔ Navegação entre páginas
 
+```text
 📂 Estrutura do Projeto
 src/
   components/
@@ -45,6 +46,8 @@ src/
     api.js
   styles/
     global.css
+```
+
 ▶️ Como Executar o Projeto
 1️⃣ Instalar dependências
 npm install
