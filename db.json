@@ -1,16 +1,17 @@
 {
   "posts": [
     {
-      "id": 1,
       "title": "Primeiro Post",
       "author": "Pedro",
-      "description": "Esse é o primeiro post"
+      "description": "Esse é o primeiro post ",
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Segundo Post",
       "author": "Gustavo",
       "description": "Esse é o segundo post"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
